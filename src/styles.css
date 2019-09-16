@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Open+Sans&display=swap');
+* {
+  font-family: 'Fira Code', 'Open Sans', sans-serif;
+}
+body {
+  text-align: center;
+}
+form {
+  margin: 20px;
+}
+.radioBtn {
+  display: inline-block;
+  margin-right: 12px;
+}
