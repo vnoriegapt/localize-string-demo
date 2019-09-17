@@ -2,13 +2,39 @@
 * {
   font-family: 'Fira Code', 'Open Sans', sans-serif;
 }
+
 body {
   text-align: center;
 }
+
 form {
   margin: 20px;
 }
-.radioBtn {
+
+.router {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.radioBtn, .nav a, .idiomBtn {
   display: inline-block;
   margin-right: 12px;
+  color: #000; 
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.idiomBtn button {
+  text-transform: none;
+  font-family: 'Fira Code', 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.idiomBtn button:hover, 
+.idiomBtn button:active,
+.idiomBtn button:focus,
+.idiomBtn button:visited {
+  background: #fff;
 }

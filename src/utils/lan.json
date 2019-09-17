@@ -7,7 +7,12 @@
     "fridge": {
       "egg": "Egg",
       "milk": "Milk"
-    }
+    },
+    "homePage": "Home",
+    "aboutPage": "About",
+    "language": "Language",
+    "english": "English",
+    "italian": "Italian"
   },
   "it": {
     "how": "Come vuoi il tuo uovo oggi?",
@@ -17,6 +22,11 @@
     "fridge": {
       "egg": "Uovo",
       "milk": "Latte"
-    }
+    },
+    "homePage": "Casa",
+    "aboutPage": "Di",
+    "language": "Linguaggio",
+    "english": "Inglese",
+    "italian": "italiana"
   }
 }

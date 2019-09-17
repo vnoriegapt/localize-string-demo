@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppFunction from './AppFunction';
+import { AppRouter } from './AppRouter';
 
 ReactDOM.render(
-  <AppFunction />,
+  <AppRouter />,
   document.getElementById('root')
 );

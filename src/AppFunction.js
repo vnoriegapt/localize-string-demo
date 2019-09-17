@@ -6,6 +6,7 @@ import './styles.css';
 const AppFunction = () => {
   useEffect(() => {
     let strings = new LocalizedStrings(lan, {});
+    console.log(strings.getInterfaceLanguage(), strings.getAvailableLanguages() );
     let idiom = strings.getLanguage();
     setState({ 
       strings,
