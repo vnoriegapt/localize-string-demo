@@ -20,12 +20,12 @@ export function AppRouter() {
     <Router>
       {strings && (<div>
         <nav className="nav router">
-          <Link to="/en">{strings && strings.homePage}</Link>
+          <Link to="/">{strings && strings.homePage}</Link>
           <Link to="/it">{strings && strings.aboutPage}</Link>
           <Idiom lan={strings} changeLan={setState} />
         </nav>
         <Route
-          path="/en"
+          path="/"
           exact
           component={HomePage}
         />
