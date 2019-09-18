@@ -1,17 +1,16 @@
 import React from 'react';
 
 export function Home (props) {
-  const { lan } = props;
+  const { strings } = props;
   return(
     <div>
-      {lan && (<div>
-        <p>- {lan.how} -</p>
-        <p>- {lan.boiledEgg} -</p>
-        <p>- {lan.softBoiledEgg} -</p>
-        <p>- {lan.choice} -</p>
-        <p>- {lan.fridge.egg} -</p>
-        <p>- {lan.fridge.milk} -</p>
-      </div>)}
+      {strings && 
+        strings.pages.home.listOfPoems.map(poem => (
+          <div key={poem.title}>
+            <h3>{poem.title}</h3>
+            <p>{poem.paragraph}</p>
+          </div>
+        ))}
     </div>
   );
 }

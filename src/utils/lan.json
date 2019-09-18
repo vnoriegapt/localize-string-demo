@@ -1,32 +1,62 @@
 {
   "en":{
-    "how": "How do you want your egg today?",
-    "boiledEgg": "Boiled egg",
-    "softBoiledEgg": "Soft-boiled egg",
-    "choice": "How to choose the egg",
-    "fridge": {
-      "egg": "Egg",
-      "milk": "Milk"
+    "pages": {
+      "home": {
+        "listOfPoems": [
+          {
+            "title": "As autumn falls",
+            "paragraph": "Shrouded in golden leaves, we wait. The world doesn’t end at sunset and only dreams limit themselves to  things. Through a labyrinth of blank hours time leads us on as autumn falls over our house, our patio. Shrouded in a  relentless fog we wait, we wait: nostalgia means to live without remembering the word we are made of."
+          },
+          {
+            "title": "To become one with music",
+            "paragraph": "You are in need of everything: grey roads, deep glooms, birds that sing even in silence; the sky, an autumn leaf, hands empty, love unreturning, snow’s whiteness; dawn lights, you are in need of everything the dream  requires, to become one with the music of the most faraway blues so that eventually your soul will have confidence in death."
+          }
+        ]
+      },
+      "about": {
+        "title": "Five poems in English and Spanish by Giovanni Quessep",
+        "description": "This year, Felipe Botero, friend of the house and in charge of our ARCADIA Traduce section, published ‘A Greek Verse for Ophelia & Other Poems’, a bilingual anthology of poems by Giovanni Quessep."
+      },
+      "footer": {
+        "cpy": "Copyright ©"
+      }
     },
-    "homePage": "Home",
-    "aboutPage": "About",
-    "language": "Language",
-    "english": "English",
-    "italian": "Italian"
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "idiom": "Language",
+      "en": "English",
+      "es": "Spanish"
+    }
   },
-  "it": {
-    "how": "Come vuoi il tuo uovo oggi?",
-    "boiledEgg": "Uovo sodo",
-    "softBoiledEgg": "Uovo alla coque",
-    "choice": "Come scegliere l'uovo",
-    "fridge": {
-      "egg": "Uovo",
-      "milk": "Latte"
+  "es": {
+    "pages": {
+      "home": {
+        "listOfPoems": [
+          {
+            "title": "Mientras cae el otoño",
+            "paragraph": "Nosotros esperamos envueltos por los hojas doradas. El mundo no acaba en el atardecer, y solamente los  sueños tienen su límite en las cosas. El tiempo nos conduce por su laberinto de horas en blanco mientras cae el otoño al patio de nuestra casa. Envueltos por la niebla incesante seguimos esperando: La nostalgia es vivir sin recordar de qué palabra fuimos inventados."
+          },
+          {
+            "title": "Para hacerte a la música",
+            "paragraph": "Necesitas de todo, de los caminos grises, de las hondas penumbras o las luces del alba, de pájaros que cantan aún en el silencio; necesitas del cielo y la hoja de otoño, de unas manos vacías o el amor que no vuelve, de la blancura de la nieve; necesitas de todo para el sueño, para hacerte a la música de los azules más distantes, para que  al fin tu alma tenga confianza en la muerte."
+          }
+        ]
+      },
+      "about": {
+        "title": "Cinco poemas en inglés y español de Giovanni Quessep",
+        "description": "Este año, Felipe Botero, amigo de la casa y encargado de nuestra sección ARCADIA Traduce, publicó ‘A Greek Verse for Ophelia & Other Poems’, una antología bilingüe de poemas de Giovanni Quessep."
+      },
+      "footer": {
+        "cpy": "Copyright ©"
+      }
     },
-    "homePage": "Casa",
-    "aboutPage": "Di",
-    "language": "Linguaggio",
-    "english": "Inglese",
-    "italian": "italiana"
+    "menu": {
+      "home": "Inicio",
+      "about": "Acerca",
+      "idiom": "Idioma",
+      "en": "Ingles",
+      "es": "Español"
+    }
   }
 }

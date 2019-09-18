@@ -13,16 +13,16 @@ export function AppRouter() {
     setState({ strings });
   }, []);
   const [state, setState] = useState({ strings: null });
-  const HomePage = () => <Home lan={state.strings} />;
-  const AboutPage = () => <About lan={state.strings} />;
+  const HomePage = () => <Home strings={state.strings} />;
+  const AboutPage = () => <About strings={state.strings} />;
   const { strings } = state;
   return(
     <Router>
       {strings && (<div>
         <nav className="nav router">
-          <Link to="/">{strings && strings.homePage}</Link>
-          <Link to="/it">{strings && strings.aboutPage}</Link>
-          <Idiom lan={strings} changeLan={setState} />
+          <Link to="/">{strings && strings.menu.home}</Link>
+          <Link to="/about">{strings && strings.menu.about}</Link>
+          <Idiom strings={strings} changeStrings={setState} />
         </nav>
         <Route
           path="/"
@@ -30,9 +30,12 @@ export function AppRouter() {
           component={HomePage}
         />
         <Route
-          path="/it"
+          path="/about"
           component={AboutPage}
         />
+        <div>
+          <p>{strings && strings.pages.footer.cpy}</p>
+        </div>
       </div>)}
     </Router>
   );

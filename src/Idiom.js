@@ -10,15 +10,15 @@ export function Idiom(props) {
     setAnchorEl(event.currentTarget);
   }
   function handleClose(idiomSelected) {
-    const { lan, changeLan } = props;
+    const { strings, changeStrings } = props;
     switch(idiomSelected) {
-      case "it": lan.setLanguage("it"); break;
-      default: lan.setLanguage("en"); break;
+      case "es": strings.setLanguage("es"); break;
+      default: strings.setLanguage("en"); break;
     }
-    changeLan({ strings: lan });
+    changeStrings({ strings });
     setAnchorEl(null);
   }
-  const { lan } = props;
+  const { strings } = props;
   return (
     <div className="idiomBtn">
       <Button
@@ -26,7 +26,7 @@ export function Idiom(props) {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        {lan ? lan.language : ''}
+        {strings ? strings.menu.idiom : ''}
       </Button>
       <Menu
         anchorEl={anchorEl}
@@ -36,10 +36,10 @@ export function Idiom(props) {
         TransitionComponent={Fade}
       >
         <MenuItem onClick={() => handleClose("en")}>
-          {lan ? lan.english : ''}
+          {strings ? strings.menu.en : ''}
         </MenuItem>
-        <MenuItem onClick={() => handleClose("it")}>
-          {lan ? lan.italian : ''}
+        <MenuItem onClick={() => handleClose("es")}>
+          {strings ? strings.menu.es : ''}
         </MenuItem>
       </Menu>
     </div>

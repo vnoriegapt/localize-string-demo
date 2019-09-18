@@ -1,17 +1,15 @@
 import React from 'react';
 
 export function About (props) {
-  const { lan } = props;
+  const { strings } = props;
   return(
     <div>
-      {lan && (<div>
-        <p>- {lan.how} -</p>
-        <p>- {lan.boiledEgg} -</p>
-        <p>- {lan.softBoiledEgg} -</p>
-        <p>- {lan.choice} -</p>
-        <p>- {lan.fridge.egg} -</p>
-        <p>- {lan.fridge.milk} -</p>
-      </div>)}
+      {strings && (
+        <div>
+          <h3>{strings.pages.about.title}</h3>
+          <p>{strings.pages.about.description}</p>
+        </div>
+      )}
     </div>
   );
 }
